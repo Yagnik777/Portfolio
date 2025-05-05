@@ -4,7 +4,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
 import Skills from './components/Skills'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 import Contact from './components/Contact'
 import toast, { Toaster } from 'react-hot-toast';
 
