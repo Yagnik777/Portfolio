@@ -16,7 +16,7 @@ function Portfolio()
             id: 1,
             logo: reactjs,
             name: "React JS+Node Js",
-            link:"https://github.com/Yagnik777/Hotel_management-",
+            link:"https://github.com/Yagnik777/Portfolio.git",
             text:"A personal portfolio website built with React to showcase my projects, skills, and experience.",
           },
           {

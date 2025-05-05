@@ -51,7 +51,7 @@ function Home() {
                 <h1 className="font-bold ">Available on</h1>
                 <ul className="flex space-x-6">
                  <li> 
-                 <a href="https://www.facebook.com/ "
+                 <a href="https://www.facebook.com/share/12JUJZ4d8fZ/ "
                  target="_blank">
                  
                 <FaSquareFacebook className="text-2xl cursor-pointer"/>
@@ -64,14 +64,16 @@ function Home() {
                 </a>
                 </li> 
                 <li>
-               <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yagnikpankhaniya45@gmail.com"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                <a href="mailto:yagnikpankhaniya45@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    
+                  <i class="fas fa-envelope"></i>
                 <BiLogoGmail className="text-2xl cursor-pointer"/>
                 </a>
                 </li>
                 <li>
-                <a href="https://web.telegram.org/ "
+                <a href="http://t.me/Yagnik070 "
                  target="_blank">
                 <FaTelegram className="text-2xl cursor-pointer"/>
                 </a>
@@ -102,5 +104,6 @@ function Home() {
     </>
   )
 }
+
 
 export default Home

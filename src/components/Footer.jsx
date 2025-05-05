@@ -16,7 +16,7 @@ function Footer() {
           <div className=" flex flex-col items-center justify-center">
             <ul className="flex space-x-6">
                              <li> 
-                             <a href="https://www.facebook.com/ "
+                             <a href="https://www.facebook.com/share/12JUJZ4d8fZ/ "
                              target="_blank">
                              
                             <FaFacebook className="text-2xl cursor-pointer"/>
