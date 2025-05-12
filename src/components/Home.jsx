@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaTelegram } from "react-icons/fa6";
 
-
+import { motion } from 'framer-motion';
 import { FaReact } from "react-icons/fa";
 import { FaPhp } from "react-icons/fa";
 import { AiFillAndroid } from "react-icons/ai";
@@ -18,8 +18,16 @@ function Home() {
   return (
     <>
         <div name="Home" className="max-w-screen-2x1 container mx-auto px-4 md:px-20 my-20">
-            <div className="flex flex-col md:flex-row">       
-            <div className="md:w-1/2 mt-12 md:mt-30 space-y-2 order-2 md:order-1">
+            <div className="flex flex-col md:flex-row">    
+                 
+           
+            {/* Text Content Section */}
+          <motion.div
+            className="md:w-1/2 mt-12 md:mt-30 space-y-2 order-2 md:order-1"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             <span className="text-xl"> Welcome To My Feed</span>
             <div className="flex space-x-1 text-2xl md:text-4xl">
               <h1>Hello, I'm a</h1>
@@ -33,7 +41,7 @@ function Home() {
               />
             </div>
             <br/>
-            <p className="text-sm md:text-md text-justify"> 
+            <p className="text-sm md:text-md text-justify mt-4"> 
             Highly motivated and detail-oriented Bachelor of Computer
             Applications (BCA) student , with a solid foundation in programming,
             web development, and Android application design. Proficient in Python,
@@ -90,12 +98,23 @@ function Home() {
                 </div>   
             </div>
             </div>
+            </motion.div>
 
-            </div>
+            
+            
 
-            <div className="md:w-1/2 md:ml-48 md:mt-20 mt-8 order-1">
-            <img src={pic} className="rounded-full w-[450px] md:h-[450px]" alt=""/>
-            </div>
+
+        
+
+          {/* Profile Image Section */}
+          <motion.div
+            className="md:w-1/2 md:ml-48 md:mt-20 mt-8 order-1"
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
+            <img src={pic} className="rounded-full w-60 md:w-[450px] md:h-[450px] shadow-lg hover:scale-105 transition-transform duration-300" alt="profile" />
+          </motion.div>
             </div>
 
         </div>
